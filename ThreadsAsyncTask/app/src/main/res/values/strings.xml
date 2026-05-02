@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">LabThreadsAsyncTask</string>
+    <string name="statut_pret">Prêt — en attente d\'action</string>
+    <string name="chargement_image_en_cours">Chargement image en cours…</string>
+    <string name="image_chargee">Image chargée avec succès ✓</string>
+    <string name="calcul_demarre">Calcul lourd démarré…</string>
+    <string name="calcul_en_cours">Calcul en cours… %1$d%%</string>
+    <string name="calcul_termine">Calcul terminé ✓  Résultat = %1$d</string>
+    <string name="ui_reactive">UI réactive ✓</string>
+</resources>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#0F0F1A">
+
+    <!-- Boîte de statut avec fond sombre -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#1A1A2E"
+        android:padding="14dp"
+        android:layout_marginBottom="14dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="STATUT"
+            android:textSize="15sp"
+            android:textColor="#8888AA"
+            android:letterSpacing="0.15"/>
+
+        <TextView
+            android:id="@+id/tvEtat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Prêt — en attente d'action"
+            android:textSize="17sp"
+            android:textColor="#A0CFFF"
+            android:layout_marginTop="4dp"/>
+    </LinearLayout>
+
+    <!-- Barre de progression -->
+    <ProgressBar
+        android:id="@+id/barProgression"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:max="100"
+        android:progress="0"
+        android:progressTint="#5B8DEE"
+        android:layout_marginBottom="16dp"
+        android:visibility="invisible"/>
+
+    <!-- Image centrée -->
+
+    <!-- Bouton 1 : Thread -->
+
+    <ImageView
+        android:id="@+id/ivResultat"
+        android:layout_width="368dp"
+        android:layout_height="90dp"
+        android:layout_marginBottom="20dp"
+        android:background="#1A1A2E"
+        android:contentDescription="résultat image"
+        android:padding="10dp"
+        android:src="@mipmap/ic_launcher" />
+
+    <Button
+        android:id="@+id/btnDemarrerThread"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Charger image (Thread)"
+        android:backgroundTint="#3B5BDB"
+        android:textColor="#C5D5FF"
+        android:layout_marginBottom="10dp"/>
+
+    <!-- Bouton 2 : AsyncTask -->
+    <Button
+        android:id="@+id/btnLancerCalcul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calcul lourd (AsyncTask)"
+        android:backgroundTint="#6741D9"
+        android:textColor="#D8CCFF"
+        android:layout_marginBottom="10dp"/>
+
+    <!-- Bouton 3 : Toast (test réactivité UI) -->
+    <Button
+        android:id="@+id/btnToastRapide"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Afficher Toast"
+        android:backgroundTint="#0D7A5F"
+        android:textColor="#AAEDDA"/>
+
+</LinearLayout>
